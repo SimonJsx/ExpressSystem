@@ -67,6 +67,8 @@ private:
 	afx_msg void OnBnClickedButtonShowout();
 	afx_msg void OnBnClickedButtonUndo();
 	afx_msg void OnItemclickListDatabase(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnNMSetfocusListDatabase(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnNMClickListDatabase(NMHDR *pNMHDR, LRESULT *pResult);
 
 private:
 	void addCommand(int undoNum);
@@ -87,7 +89,4 @@ private:
 
 	ListSortImpl listSortImpl_;
 	int itemDataSort_;
-public:
-	afx_msg void OnNMSetfocusListDatabase(NMHDR *pNMHDR, LRESULT *pResult);
-	afx_msg void OnNMClickListDatabase(NMHDR *pNMHDR, LRESULT *pResult);
 };
